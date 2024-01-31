@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="pt-br">
-			<body className={inter.variable}>{children}</body>
+			<body className={`${inter.variable} dark`}>{children}</body>
 		</html>
 	);
 }
