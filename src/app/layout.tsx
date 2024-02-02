@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Footer from './_components/footer';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-intes' });
@@ -15,7 +16,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="pt-br">
-			<body className={`${inter.variable} dark`}>{children}</body>
+			<body className={`${inter.variable} dark`}>
+				{children}
+				<Footer />
+			</body>
 		</html>
 	);
 }
