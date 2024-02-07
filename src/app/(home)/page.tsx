@@ -16,7 +16,7 @@ export default async function Home() {
 			<Header />
 
 			<div className="px-5 pt-5">
-				<h2 className="text-xl font-bold">Olá Simão</h2>
+				n<h2 className="text-xl font-bold">Olá Simão</h2>
 				<p className="capitalize text-sm">{date}</p>
 			</div>
 
