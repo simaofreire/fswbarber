@@ -28,7 +28,7 @@ model BarberShop {
 model Service {
   id           String     @id @default(uuid())
   name         String
-  price        Decimal    @db.Decimal(10, 2)
+  price        Float      @db.Real
   barbershopId String
   barbershop   BarberShop @relation(fields: [barbershopId], references: [id])
   description  String

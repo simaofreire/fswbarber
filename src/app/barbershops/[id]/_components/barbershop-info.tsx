@@ -24,7 +24,13 @@ export default function BarbershopInfo({ barbershop }: BarbershopInfoProps) {
 				<Button className="z-50 absolute top-4 right-4" size="icon" variant="outline">
 					<MenuIcon />
 				</Button>
-				<Image src={barbershop.imageUrl} alt={barbershop.name} fill objectFit="cover" className="opacity-75" />
+				<Image
+					src={barbershop.imageUrl}
+					alt={barbershop.name}
+					fill
+					style={{ objectFit: 'cover' }}
+					className="opacity-75"
+				/>
 			</div>
 			<div className="px-5 pt-3 pb-6 border-solid border-secondary border-b">
 				<h1 className="text-xl font-bold">{barbershop.name}</h1>
